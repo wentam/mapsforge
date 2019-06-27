@@ -129,7 +129,7 @@ class AndroidPaint implements Paint {
 
     AndroidPaint() {
         paint = new android.graphics.Paint();
-        this.paint.setAntiAlias(true);
+        this.paint.setAntiAlias(false);
         this.paint.setStrokeCap(getAndroidCap(Cap.ROUND));
         this.paint.setStrokeJoin(android.graphics.Paint.Join.ROUND);
         this.paint.setStyle(getAndroidStyle(Style.FILL));
