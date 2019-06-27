@@ -49,7 +49,7 @@ public class WayTextContainer extends MapElementContainer {
         // if we support right-to-left text.
         // we also need to make the container larger by textHeight as otherwise the end points do
         // not correctly reflect the size of the text on screen
-        this.boundaryAbsolute = lineString.getBounds().enlarge(textHeight / 2d, textHeight / 2d, textHeight / 2d, textHeight / 2d);
+        this.boundaryAbsolute = lineString.getBounds();
     }
 
     @Override
